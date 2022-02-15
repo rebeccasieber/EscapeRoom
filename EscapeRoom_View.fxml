@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+      prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imgSplash" fitHeight="292.0" fitWidth="504.0" layoutX="48.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../AbandondPlane.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSplash" layoutX="261.0" layoutY="347.0" mnemonicParsing="false" text="Button" />
+      <Label fx:id="lblSplashStory" layoutX="74.0" layoutY="157.0" text="Label" />
+      <Label fx:id="lblSplash" layoutX="167.0" layoutY="87.0" prefHeight="27.0" prefWidth="525.0" text="Label" />
+   </children>
+</Pane>

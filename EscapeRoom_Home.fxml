@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="189.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0" prefWidth="199.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.0" minWidth="10.0" prefWidth="211.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="109.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="290.0" minHeight="10.0" prefHeight="251.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fx:id="imgPickTheLock" fitHeight="248.0" fitWidth="531.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <image>
+            <Image url="@../../Lock.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="imgRestorePower" fitHeight="249.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <image>
+            <Image url="@../../LightBulb.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="imgCallForHelp" fitHeight="246.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <image>
+            <Image url="@../../Phone.jpg" />
+         </image></ImageView>
+      <Button fx:id="btnPickTheLock" mnemonicParsing="false" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button fx:id="btnRestorePower" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button fx:id="btnCallForHelp" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Label fx:id="lblInstructions" prefHeight="108.0" prefWidth="600.0" text="Label" GridPane.columnSpan="3" GridPane.valignment="TOP" />
+   </children>
+</GridPane>

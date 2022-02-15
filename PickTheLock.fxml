@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <Button fx:id="btnGoHome" mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Label fx:id="lblUnderConstruction1" text="Label" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <GridPane fx:id="sudokuGrid" gridLinesVisible="true" prefHeight="415.0" prefWidth="415.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Separator fx:id="seperator1" blendMode="DARKEN" prefHeight="4.0" prefWidth="482.0" style="-fx-border-color: black; -fx-background-color: black;" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="-1.0" />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="-5.0" />
+               </padding>
+            </Separator>
+            <Separator fx:id="seperator2" halignment="LEFT" orientation="VERTICAL" prefHeight="410.0" prefWidth="0.0" style="-fx-background-color: black;" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowSpan="2147483647" GridPane.valignment="TOP">
+               <padding>
+                  <Insets left="-3.0" />
+               </padding>
+            </Separator>
+            <Separator fx:id="seperator3" orientation="VERTICAL" prefHeight="410.0" prefWidth="0.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowSpan="2147483647">
+               <padding>
+                  <Insets left="-2.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="-2.0" />
+               </GridPane.margin>
+            </Separator>
+            <Separator fx:id="seperator4" prefHeight="3.0" prefWidth="482.0" style="-fx-background-color: black; -fx-fill-color: black; -fx-border-style: solid;" GridPane.columnSpan="2147483647" GridPane.rowIndex="6" GridPane.valignment="TOP">
+               <padding>
+                  <Insets top="-5.0" />
+               </padding></Separator>
+         </children>
+      </GridPane>
+   </center>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgPickTheLock" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnCheckSudoku" mnemonicParsing="false" text="Button" />
+            <Label fx:id="lblwinOrLose" text="Label" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
